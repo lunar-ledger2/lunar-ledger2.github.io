@@ -1,0 +1,1354 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BT 7086 失效地址 回家指南 | 官方视频门户 · 稳定访问与回家攻略</title>
+<meta name="description" content="BT 7086 失效地址回家指南官方网站，聚合稳定访问方式、版本更新、视频教程与创作者社区，帮助用户快速找回入口、了解正版资源与常见问题。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1f2a'/%3E%3Cpath d='M16 40l16-20 16 20' stroke='%2336e0b2' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='46' r='4' fill='%23ffd166'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bt-bg:#0b1f2a;
+  --bt-bg-soft:#102c3a;
+  --bt-panel:#123444;
+  --bt-panel-2:#0e2833;
+  --bt-line:rgba(94,234,212,.18);
+  --bt-line-strong:rgba(94,234,212,.42);
+  --bt-text:#e8f4f2;
+  --bt-muted:#9db8bd;
+  --bt-mint:#36e0b2;
+  --bt-mint-dim:#1f9c7d;
+  --bt-amber:#ffd166;
+  --bt-coral:#ff7a6b;
+  --bt-sky:#6ec6ff;
+  --bt-radius:16px;
+  --bt-radius-sm:10px;
+  --bt-shadow:0 18px 40px rgba(0,0,0,.38);
+  --bt-head-h:112px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:
+    radial-gradient(1200px 600px at 85% -10%, rgba(54,224,178,.14), transparent 60%),
+    radial-gradient(900px 500px at 0% 15%, rgba(110,198,255,.10), transparent 55%),
+    var(--bt-bg);
+  color:var(--bt-text);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3,h4{line-height:1.3;margin:0;}
+p{margin:0 0 1em;}
+ul{margin:0;padding-left:1.1em;}
+button{font-family:inherit;cursor:pointer;}
+
+.bt-wrap{width:min(1180px,92vw);margin:0 auto;}
+
+/* ===== sticky header group ===== */
+.bt-sticky-group{
+  position:sticky;top:0;z-index:60;
+  background:linear-gradient(180deg, rgba(8,24,32,.98), rgba(8,24,32,.94));
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--bt-line);
+}
+.bt-announce{
+  background:linear-gradient(90deg,#0f3a2e,#123a4a 55%,#1c3040);
+  border-bottom:1px solid rgba(54,224,178,.28);
+  font-size:.86rem;
+  padding:9px 0;
+}
+.bt-announce .bt-wrap{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.bt-announce-tag{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--bt-mint);color:#062018;font-weight:700;
+  padding:2px 10px;border-radius:999px;font-size:.76rem;letter-spacing:.04em;
+}
+.bt-announce-text{color:#c7e9e1;}
+.bt-announce-text b{color:var(--bt-amber);font-weight:600;}
+.bt-announce-link{margin-left:auto;color:var(--bt-mint);font-weight:600;border-bottom:1px dashed rgba(54,224,178,.5);}
+.bt-announce-link:hover{color:#fff;}
+
+.bt-header{padding:14px 0 12px;}
+.bt-header .bt-wrap{display:flex;align-items:center;gap:22px;}
+.bt-logo{display:flex;align-items:center;gap:11px;flex-shrink:0;}
+.bt-logo-mark{width:42px;height:42px;border-radius:12px;background:linear-gradient(150deg,#1a6f5c,#0d3b3a);display:grid;place-items:center;box-shadow:inset 0 0 0 1px rgba(54,224,178,.45);}
+.bt-logo-text{display:flex;flex-direction:column;line-height:1.15;}
+.bt-logo-text strong{font-size:1.06rem;letter-spacing:.02em;}
+.bt-logo-text span{font-size:.72rem;color:var(--bt-muted);letter-spacing:.16em;text-transform:uppercase;}
+
+.bt-nav{display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
+.bt-nav a{
+  padding:7px 12px;border-radius:999px;font-size:.9rem;color:var(--bt-muted);
+  border:1px solid transparent;transition:.18s;
+}
+.bt-nav a:hover{color:#fff;background:rgba(54,224,178,.10);border-color:var(--bt-line);}
+.bt-header-tools{margin-left:auto;display:flex;align-items:center;gap:10px;}
+
+.bt-search{position:relative;display:flex;align-items:center;}
+.bt-search input{
+  width:210px;background:var(--bt-panel-2);border:1px solid var(--bt-line);
+  color:var(--bt-text);padding:9px 12px 9px 34px;border-radius:999px;font-size:.86rem;outline:none;transition:.2s;
+}
+.bt-search input:focus{border-color:var(--bt-mint);width:240px;box-shadow:0 0 0 3px rgba(54,224,178,.12);}
+.bt-search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);width:15px;height:15px;stroke:var(--bt-muted);fill:none;stroke-width:2;}
+.bt-search-hint{
+  position:absolute;top:calc(100% + 8px);left:0;right:0;background:var(--bt-panel);
+  border:1px solid var(--bt-line-strong);border-radius:12px;padding:10px;font-size:.8rem;color:var(--bt-muted);
+  box-shadow:var(--bt-shadow);display:none;z-index:70;
+}
+.bt-search-hint.is-on{display:block;}
+.bt-search-hint strong{color:var(--bt-mint);}
+
+.bt-btn{
+  border:1px solid var(--bt-line-strong);background:rgba(54,224,178,.10);color:var(--bt-mint);
+  padding:8px 16px;border-radius:999px;font-size:.86rem;font-weight:600;transition:.18s;
+}
+.bt-btn:hover{background:rgba(54,224,178,.20);color:#fff;}
+.bt-btn-solid{background:linear-gradient(135deg,var(--bt-mint),#25b58e);color:#04211a;border-color:transparent;}
+.bt-btn-solid:hover{color:#04211a;filter:brightness(1.06);}
+.bt-btn-ghost{background:transparent;color:var(--bt-text);border-color:var(--bt-line);}
+.bt-btn-ghost:hover{background:rgba(255,255,255,.06);}
+.bt-menu-toggle{display:none;background:transparent;border:1px solid var(--bt-line);color:var(--bt-text);border-radius:10px;padding:6px 10px;font-size:.84rem;}
+
+/* ===== hero ===== */
+.bt-hero{padding:46px 0 30px;position:relative;}
+.bt-hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:40px;align-items:center;}
+.bt-hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.18em;
+  color:var(--bt-mint);text-transform:uppercase;border:1px solid var(--bt-line-strong);
+  padding:5px 12px;border-radius:999px;margin-bottom:18px;
+}
+.bt-hero h1{
+  font-size:clamp(2rem,4.6vw,3.35rem);font-weight:800;letter-spacing:.01em;
+  background:linear-gradient(120deg,#ffffff 20%,#9ff5dc 62%,#6ec6ff 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:16px;
+}
+.bt-hero-lead{font-size:1.02rem;color:#c2dcdd;max-width:36em;}
+.bt-hero-lead b{color:var(--bt-amber);font-weight:600;}
+.bt-hero-desc{color:var(--bt-muted);font-size:.93rem;margin-top:12px;border-left:2px solid rgba(54,224,178,.4);padding-left:14px;}
+.bt-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 26px;}
+.bt-hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:520px;}
+.bt-stat{background:rgba(18,52,68,.7);border:1px solid var(--bt-line);border-radius:var(--bt-radius-sm);padding:12px 14px;}
+.bt-stat strong{display:block;font-size:1.22rem;color:var(--bt-mint);letter-spacing:.02em;}
+.bt-stat span{font-size:.76rem;color:var(--bt-muted);}
+
+.bt-hero-visual{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--bt-line-strong);box-shadow:var(--bt-shadow);background:#08202a;}
+.bt-hero-visual svg{width:100%;height:auto;}
+.bt-hero-badge{
+  position:absolute;left:16px;bottom:16px;right:16px;display:flex;gap:10px;align-items:center;
+  background:rgba(6,24,30,.82);border:1px solid var(--bt-line);border-radius:12px;padding:10px 14px;backdrop-filter:blur(6px);
+}
+.bt-hero-badge .dot{width:9px;height:9px;border-radius:50%;background:var(--bt-mint);box-shadow:0 0 0 4px rgba(54,224,178,.18);flex:none;}
+.bt-hero-badge p{margin:0;font-size:.8rem;color:#bfdcdd;}
+.bt-hero-badge b{color:var(--bt-amber);}
+
+/* ===== section shell ===== */
+.bt-section{padding:52px 0;border-top:1px solid rgba(94,234,212,.10);}
+.bt-section-head{display:flex;align-items:flex-end;gap:18px;flex-wrap:wrap;margin-bottom:26px;}
+.bt-section-head h2{font-size:clamp(1.4rem,2.5vw,1.9rem);font-weight:750;letter-spacing:.01em;}
+.bt-section-head h2 em{font-style:normal;color:var(--bt-mint);}
+.bt-section-head p{color:var(--bt-muted);font-size:.9rem;margin:0;}
+.bt-section-head .bt-kicker{
+  font-size:.74rem;letter-spacing:.2em;color:var(--bt-amber);text-transform:uppercase;
+  display:block;margin-bottom:8px;
+}
+.bt-section-head-right{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap;}
+
+.bt-tag{
+  display:inline-block;font-size:.72rem;padding:2px 9px;border-radius:999px;
+  background:rgba(110,198,255,.12);color:var(--bt-sky);border:1px solid rgba(110,198,255,.28);
+}
+.bt-tag-mint{background:rgba(54,224,178,.13);color:var(--bt-mint);border-color:rgba(54,224,178,.3);}
+.bt-tag-amber{background:rgba(255,209,102,.12);color:var(--bt-amber);border-color:rgba(255,209,102,.3);}
+
+/* ===== analysis long text ===== */
+.bt-analysis{padding:54px 0;}
+.bt-analysis-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.42fr);gap:38px;align-items:start;}
+.bt-analysis-body h2{font-size:clamp(1.35rem,2.4vw,1.8rem);margin-bottom:10px;}
+.bt-analysis-body h3{font-size:1.06rem;color:#dff8f1;margin:26px 0 10px;padding-left:12px;border-left:3px solid var(--bt-mint);}
+.bt-analysis-body p{color:#bfd6d8;font-size:.95rem;}
+.bt-analysis-body p b{color:var(--bt-amber);font-weight:600;}
+.bt-aside-card{
+  background:linear-gradient(160deg,rgba(20,58,74,.9),rgba(10,32,42,.9));
+  border:1px solid var(--bt-line);border-radius:var(--bt-radius);padding:20px;margin-bottom:18px;
+}
+.bt-aside-card h4{font-size:.95rem;margin-bottom:10px;color:var(--bt-mint);letter-spacing:.04em;}
+.bt-aside-card ul{font-size:.88rem;color:#b7d2d4;padding-left:1.1em;}
+.bt-aside-card li{margin-bottom:6px;}
+.bt-aside-mini{display:flex;align-items:center;gap:10px;font-size:.85rem;color:var(--bt-muted);padding:8px 0;border-bottom:1px dashed rgba(94,234,212,.16);}
+.bt-aside-mini:last-child{border-bottom:none;}
+.bt-aside-mini b{color:var(--bt-text);font-weight:600;}
+
+/* ===== featured ===== */
+.bt-feature-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:26px;align-items:start;}
+.bt-feature-main{
+  background:var(--bt-panel);border:1px solid var(--bt-line);border-radius:var(--bt-radius);overflow:hidden;
+  transition:.2s;
+}
+.bt-feature-main:hover{transform:translateY(-3px);border-color:var(--bt-line-strong);box-shadow:var(--bt-shadow);}
+.bt-feature-main .bt-cover{position:relative;}
+.bt-feature-main .bt-cover svg{width:100%;height:auto;aspect-ratio:16/9;}
+.bt-cover-play{
+  position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;
+}
+.bt-cover-play span{
+  width:54px;height:54px;border-radius:50%;background:rgba(6,24,30,.72);border:1px solid rgba(54,224,178,.6);
+  display:grid;place-items:center;
+}
+.bt-cover-play span::after{content:"";border-left:14px solid var(--bt-mint);border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:4px;}
+.bt-feature-body{padding:18px 20px 20px;}
+.bt-feature-body h3{font-size:1.2rem;margin-bottom:8px;}
+.bt-feature-body p{font-size:.9rem;color:var(--bt-muted);}
+.bt-meta{display:flex;flex-wrap:wrap;gap:12px;font-size:.78rem;color:#8fb0b5;margin:12px 0;}
+.bt-meta b{color:var(--bt-text);font-weight:600;}
+.bt-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center;}
+.bt-act{
+  border:1px solid var(--bt-line);background:rgba(255,255,255,.03);color:#bfd8da;
+  padding:5px 12px;border-radius:999px;font-size:.78rem;display:inline-flex;gap:6px;align-items:center;transition:.16s;
+}
+.bt-act:hover{border-color:var(--bt-mint);color:var(--bt-mint);}
+.bt-act.is-on{background:rgba(54,224,178,.16);border-color:var(--bt-mint);color:var(--bt-mint);}
+
+.bt-side-list{display:grid;gap:12px;}
+.bt-side-item{
+  display:grid;grid-template-columns:74px minmax(0,1fr);gap:14px;align-items:center;
+  background:var(--bt-panel-2);border:1px solid rgba(94,234,212,.12);border-radius:var(--bt-radius-sm);
+  padding:12px;transition:.18s;
+}
+.bt-side-item:hover{border-color:var(--bt-line-strong);background:rgba(22,64,80,.7);transform:translateX(3px);}
+.bt-side-thumb{border-radius:8px;overflow:hidden;border:1px solid var(--bt-line);}
+.bt-side-thumb svg{width:100%;height:auto;aspect-ratio:4/3;}
+.bt-side-item h4{font-size:.94rem;margin-bottom:4px;}
+.bt-side-item p{font-size:.78rem;color:var(--bt-muted);margin:0;}
+.bt-side-item .bt-meta{margin:6px 0 0;font-size:.72rem;}
+
+/* ===== video stream ===== */
+.bt-stream{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;}
+.bt-video-card{
+  background:var(--bt-panel);border:1px solid var(--bt-line);border-radius:var(--bt-radius);
+  overflow:hidden;transition:.2s;display:flex;flex-direction:column;
+}
+.bt-video-card:hover{transform:translateY(-3px);border-color:var(--bt-line-strong);box-shadow:var(--bt-shadow);}
+.bt-video-card .bt-cover{position:relative;border-bottom:1px solid var(--bt-line);}
+.bt-video-card .bt-cover svg{width:100%;height:auto;aspect-ratio:16/9;}
+.bt-video-card-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1;}
+.bt-video-card-body h3{font-size:1.02rem;}
+.bt-video-card-body p{font-size:.84rem;color:var(--bt-muted);margin:0;}
+.bt-video-card-body .bt-actions{margin-top:auto;padding-top:10px;}
+
+.bt-vlist{display:grid;gap:10px;margin-top:22px;}
+.bt-vrow{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center;
+  padding:13px 16px;border:1px solid rgba(94,234,212,.13);border-radius:var(--bt-radius-sm);
+  background:var(--bt-panel-2);transition:.16s;
+}
+.bt-vrow:hover{border-color:var(--bt-line-strong);background:rgba(20,60,76,.72);}
+.bt-vrow h4{font-size:.94rem;margin-bottom:3px;}
+.bt-vrow p{font-size:.79rem;color:var(--bt-muted);margin:0;}
+.bt-vrow-side{font-size:.74rem;color:#8fb0b5;text-align:right;white-space:nowrap;}
+
+/* ===== topics ===== */
+.bt-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;}
+.bt-topic{
+  background:linear-gradient(170deg,rgba(19,54,68,.95),rgba(9,28,37,.95));
+  border:1px solid var(--bt-line);border-radius:var(--bt-radius);padding:18px;transition:.2s;
+  display:flex;flex-direction:column;
+}
+.bt-topic:hover{transform:translateY(-3px);border-color:var(--bt-line-strong);}
+.bt-topic .bt-topic-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px;}
+.bt-topic h3{font-size:1.05rem;}
+.bt-topic > p{font-size:.84rem;color:var(--bt-muted);}
+.bt-topic ul{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:8px;}
+.bt-topic li{
+  font-size:.8rem;color:#b9d3d5;padding:7px 10px;border-radius:8px;background:rgba(255,255,255,.03);
+  border-left:2px solid rgba(54,224,178,.4);
+}
+.bt-topic-status{font-size:.72rem;color:var(--bt-amber);}
+
+/* ===== authors ===== */
+.bt-authors{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;}
+.bt-author{
+  background:var(--bt-panel);border:1px solid var(--bt-line);border-radius:var(--bt-radius);
+  padding:18px;text-align:left;transition:.2s;display:flex;flex-direction:column;gap:10px;
+}
+.bt-author:hover{transform:translateY(-3px);border-color:var(--bt-line-strong);box-shadow:var(--bt-shadow);}
+.bt-avatar{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:1.1rem;color:#04211a;}
+.bt-author h3{font-size:1rem;}
+.bt-author .bt-author-role{font-size:.74rem;color:var(--bt-sky);}
+.bt-author p{font-size:.79rem;color:var(--bt-muted);margin:0;}
+.bt-author-nums{display:flex;gap:14px;font-size:.75rem;color:#8fb0b5;}
+.bt-author-nums b{color:var(--bt-mint);font-weight:600;}
+.bt-author .bt-act{align-self:flex-start;margin-top:auto;}
+
+/* ===== comments ===== */
+.bt-comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+.bt-comment{
+  background:var(--bt-panel-2);border:1px solid rgba(94,234,212,.13);border-radius:var(--bt-radius-sm);
+  padding:15px 17px;transition:.18s;
+}
+.bt-comment:hover{border-color:var(--bt-line-strong);}
+.bt-comment-top{display:flex;align-items:center;gap:10px;margin-bottom:8px;}
+.bt-comment-top .bt-avatar{width:34px;height:34px;font-size:.82rem;}
+.bt-comment-top strong{font-size:.86rem;}
+.bt-comment-top span{font-size:.72rem;color:#7fa2a7;margin-left:auto;}
+.bt-comment p{font-size:.84rem;color:#c3dadc;margin:0;}
+.bt-comment-meta{font-size:.72rem;color:#7fa2a7;margin-top:8px;}
+
+.bt-summary-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:22px;}
+.bt-score{background:var(--bt-panel);border:1px solid var(--bt-line);border-radius:var(--bt-radius-sm);padding:14px;text-align:center;}
+.bt-score b{display:block;font-size:1.5rem;color:var(--bt-mint);}
+.bt-score span{font-size:.76rem;color:var(--bt-muted);}
+
+/* ===== news + partners ===== */
+.bt-two-col{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:26px;align-items:start;}
+.bt-news{display:grid;gap:10px;}
+.bt-news-item{
+  display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:14px;align-items:center;
+  background:var(--bt-panel-2);border:1px solid rgba(94,234,212,.13);border-radius:var(--bt-radius-sm);padding:12px 15px;
+}
+.bt-news-date{font-size:.74rem;color:var(--bt-amber);white-space:nowrap;}
+.bt-news-item h4{font-size:.9rem;margin-bottom:2px;}
+.bt-news-item p{font-size:.76rem;color:var(--bt-muted);margin:0;}
+.bt-news-tag{font-size:.7rem;padding:2px 8px;border-radius:999px;background:rgba(54,224,178,.12);color:var(--bt-mint);white-space:nowrap;}
+
+.bt-partners{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.bt-partner{
+  border:1px dashed rgba(94,234,212,.28);border-radius:var(--bt-radius-sm);padding:14px;
+  display:flex;align-items:center;gap:10px;transition:.18s;background:rgba(18,52,68,.5);
+}
+.bt-partner:hover{border-color:var(--bt-mint);background:rgba(23,68,84,.7);}
+.bt-partner-mark{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;font-weight:700;font-size:.82rem;color:#04211a;flex:none;}
+.bt-partner span{font-size:.82rem;color:#bfd8da;}
+
+/* ===== faq ===== */
+.bt-faq{display:grid;gap:10px;}
+.bt-faq details{
+  background:var(--bt-panel-2);border:1px solid rgba(94,234,212,.14);border-radius:var(--bt-radius-sm);padding:0;overflow:hidden;
+}
+.bt-faq summary{
+  cursor:pointer;list-style:none;padding:14px 18px;font-size:.92rem;font-weight:600;display:flex;align-items:center;gap:10px;
+}
+.bt-faq summary::-webkit-details-marker{display:none;}
+.bt-faq summary::before{content:"+";color:var(--bt-mint);font-weight:700;font-size:1.05rem;width:14px;flex:none;}
+.bt-faq details[open] summary::before{content:"−";}
+.bt-faq details[open] summary{color:var(--bt-mint);}
+.bt-faq details p{padding:0 18px 15px 42px;font-size:.84rem;color:#b9d3d5;margin:0;}
+
+/* ===== cta strip ===== */
+.bt-cta-strip{
+  margin:52px 0;padding:34px;border-radius:22px;
+  background:
+    radial-gradient(600px 260px at 12% 0%, rgba(54,224,178,.20), transparent 60%),
+    linear-gradient(135deg,#123a4a,#0c2a34);
+  border:1px solid var(--bt-line-strong);
+  display:flex;align-items:center;gap:26px;flex-wrap:wrap;box-shadow:var(--bt-shadow);
+}
+.bt-cta-strip h2{font-size:1.4rem;margin-bottom:6px;}
+.bt-cta-strip p{color:var(--bt-muted);font-size:.9rem;margin:0;max-width:44em;}
+.bt-cta-strip .bt-hero-actions{margin:0;margin-left:auto;}
+
+/* ===== footer ===== */
+.bt-footer{
+  border-top:1px solid var(--bt-line);background:linear-gradient(180deg,rgba(9,28,37,.6),rgba(6,20,27,.95));
+  padding:44px 0 28px;
+}
+.bt-footer-grid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,.7fr));gap:28px;}
+.bt-footer h4{font-size:.86rem;color:var(--bt-mint);margin-bottom:12px;letter-spacing:.06em;}
+.bt-footer p{font-size:.82rem;color:var(--bt-muted);}
+.bt-footer ul{list-style:none;padding:0;margin:0;display:grid;gap:7px;font-size:.82rem;color:var(--bt-muted);}
+.bt-footer ul a:hover{color:var(--bt-mint);}
+.bt-footer-bottom{
+  margin-top:30px;padding-top:18px;border-top:1px dashed rgba(94,234,212,.18);
+  display:flex;flex-wrap:wrap;gap:12px;align-items:center;font-size:.76rem;color:#7fa2a7;
+}
+.bt-footer-bottom .bt-legal{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap;}
+
+/* ===== back to top + toast ===== */
+.bt-backtop{
+  position:fixed;right:20px;bottom:22px;width:44px;height:44px;border-radius:12px;z-index:80;
+  background:var(--bt-panel);border:1px solid var(--bt-line-strong);color:var(--bt-mint);
+  display:grid;place-items:center;opacity:0;pointer-events:none;transition:.2s;font-size:1.05rem;
+}
+.bt-backtop.is-on{opacity:1;pointer-events:auto;}
+.bt-backtop:hover{background:var(--bt-mint);color:#04211a;}
+.bt-toast{
+  position:fixed;left:50%;bottom:30px;transform:translate(-50%,20px);z-index:120;
+  background:#0f3a3a;border:1px solid var(--bt-mint);color:#e8f4f2;padding:10px 20px;border-radius:999px;
+  font-size:.84rem;opacity:0;pointer-events:none;transition:.24s;box-shadow:var(--bt-shadow);
+}
+.bt-toast.is-on{opacity:1;transform:translate(-50%,0);}
+
+/* modal */
+.bt-modal-mask{
+  position:fixed;inset:0;background:rgba(4,14,19,.72);z-index:150;display:none;place-items:center;padding:20px;
+  backdrop-filter:blur(4px);
+}
+.bt-modal-mask.is-on{display:grid;}
+.bt-modal{
+  width:min(460px,100%);background:linear-gradient(170deg,#123a4a,#0b2530);border:1px solid var(--bt-line-strong);
+  border-radius:18px;padding:24px;box-shadow:var(--bt-shadow);
+}
+.bt-modal h3{font-size:1.1rem;margin-bottom:8px;}
+.bt-modal p{font-size:.86rem;color:var(--bt-muted);}
+.bt-modal .bt-actions{margin-top:16px;}
+.bt-modal-close{margin-left:auto;background:transparent;border:1px solid var(--bt-line);color:var(--bt-text);border-radius:8px;padding:3px 10px;font-size:.8rem;}
+
+.bt-field{margin-bottom:12px;}
+.bt-field label{display:block;font-size:.8rem;color:var(--bt-muted);margin-bottom:5px;}
+.bt-field input,.bt-field textarea{
+  width:100%;background:var(--bt-panel-2);border:1px solid var(--bt-line);color:var(--bt-text);
+  border-radius:10px;padding:9px 12px;font-size:.86rem;outline:none;resize:vertical;
+}
+.bt-field input:focus,.bt-field textarea:focus{border-color:var(--bt-mint);}
+
+@media (max-width:1000px){
+  .bt-hero-grid{grid-template-columns:minmax(0,1fr);}
+  .bt-analysis-grid{grid-template-columns:minmax(0,1fr);}
+  .bt-feature-grid{grid-template-columns:minmax(0,1fr);}
+  .bt-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .bt-authors{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .bt-two-col{grid-template-columns:minmax(0,1fr);}
+  .bt-footer-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);}
+}
+@media (max-width:820px){
+  .bt-header .bt-wrap{flex-wrap:wrap;gap:12px;}
+  .bt-menu-toggle{display:inline-block;}
+  .bt-nav{
+    display:none;width:100%;order:5;padding:10px 0 4px;border-top:1px solid var(--bt-line);margin-top:6px;
+  }
+  .bt-nav.is-open{display:flex;}
+  .bt-header-tools{margin-left:auto;}
+  .bt-search input{width:150px;}
+  .bt-search input:focus{width:170px;}
+  .bt-stream{grid-template-columns:minmax(0,1fr);}
+  .bt-comments{grid-template-columns:minmax(0,1fr);}
+  .bt-summary-grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .bt-topic-grid{grid-template-columns:minmax(0,1fr);}
+}
+@media (max-width:600px){
+  .bt-hero-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;}
+  .bt-stat strong{font-size:1rem;}
+  .bt-authors{grid-template-columns:minmax(0,1fr);}
+  .bt-partners{grid-template-columns:minmax(0,1fr);}
+  .bt-footer-grid{grid-template-columns:minmax(0,1fr);}
+  .bt-cta-strip{padding:24px;}
+  .bt-cta-strip .bt-hero-actions{margin-left:0;}
+  .bt-vrow{grid-template-columns:minmax(0,1fr);}
+  .bt-vrow-side{text-align:left;}
+  .bt-news-item{grid-template-columns:auto minmax(0,1fr);}
+  .bt-news-tag{grid-column:2;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="bt-sticky-group" id="btTop">
+  <div class="bt-announce">
+    <div class="bt-wrap">
+      <span class="bt-announce-tag">官方公告</span>
+      <span class="bt-announce-text"><b>BT 7086 回家指南</b> 2026 冬季版已上线：新增 3 条稳定访问线路，教程第 12 集同步发布。</span>
+      <a class="bt-announce-link" href="#btGuide">查看更新详情</a>
+    </div>
+  </div>
+  <header class="bt-header">
+    <div class="bt-wrap">
+      <a class="bt-logo" href="#btTop" aria-label="BT 7086 回家指南官方视频门户">
+        <span class="bt-logo-mark">
+          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+            <path d="M4 16l8-10 8 10" fill="none" stroke="#36e0b2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="12" cy="18.5" r="1.8" fill="#ffd166"/>
+          </svg>
+        </span>
+        <span class="bt-logo-text">
+          <strong>回家指南</strong>
+          <span>BT 7086 Official</span>
+        </span>
+      </a>
+      <nav class="bt-nav" id="btNav" aria-label="主导航">
+        <a href="#btIntro">品牌简介</a>
+        <a href="#btGuide">失效解析</a>
+        <a href="#btVideos">精品视频</a>
+        <a href="#btTopics">专题企划</a>
+        <a href="#btAuthors">创作者</a>
+        <a href="#btVoices">用户口碑</a>
+        <a href="#btFaq">帮助中心</a>
+      </nav>
+      <div class="bt-header-tools">
+        <div class="bt-search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/></svg>
+          <input type="search" id="btSearchInput" placeholder="搜索失效原因、线路、教程" aria-label="站内搜索">
+          <div class="bt-search-hint" id="btSearchHint"></div>
+        </div>
+        <button class="bt-menu-toggle" id="btMenuToggle" aria-expanded="false" aria-controls="btNav">菜单</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main>
+
+  <!-- HERO -->
+  <section class="bt-hero" id="btIntro">
+    <div class="bt-wrap">
+      <div class="bt-hero-grid">
+        <div>
+          <span class="bt-hero-eyebrow">官方网站 · 品牌视频门户</span>
+          <h1>BT 7086 失效地址 回家指南</h1>
+          <p class="bt-hero-lead">作为持续运营的 <b>BT 7086 回家指南官方网站</b>，我们把“地址失效”这件事讲清楚：从线路原理、版本更新到高清视频教程，为每一位用户提供可信赖的回家路径。</p>
+          <p class="bt-hero-desc">这是一个企业级视频品牌门户，聚合官方发布、精品内容与创作者社区。我们深耕访问稳定性这一垂直领域，用真实记录与专业解析陪伴用户，让每一次回家都有据可循。</p>
+          <div class="bt-hero-actions">
+            <a class="bt-btn bt-btn-solid" href="#btGuide">阅读失效解析</a>
+            <a class="bt-btn bt-btn-ghost" href="#btVideos">观看官方视频</a>
+            <button class="bt-btn bt-btn-ghost" data-bt-open="submit">提交回家反馈</button>
+          </div>
+          <div class="bt-hero-stats">
+            <div class="bt-stat"><strong>1,280+</strong><span>累计发布教程条目</span></div>
+            <div class="bt-stat"><strong>36</strong><span>在线创作者伙伴</span></div>
+            <div class="bt-stat"><strong>92.6%</strong><span>回家成功率口碑</span></div>
+          </div>
+        </div>
+        <div class="bt-hero-visual">
+          <svg viewBox="0 0 720 540" role="img" aria-label="BT 7086 回家指南首屏主视觉：夜间城市中由信号线路连接的回家路径">
+            <defs>
+              <linearGradient id="btSky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#0e3242"/>
+                <stop offset="0.55" stop-color="#0a2230"/>
+                <stop offset="1" stop-color="#061820"/>
+              </linearGradient>
+              <linearGradient id="btGlow" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#36e0b2" stop-opacity="0.85"/>
+                <stop offset="1" stop-color="#6ec6ff" stop-opacity="0.25"/>
+              </linearGradient>
+              <linearGradient id="btBldg" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#16465a"/>
+                <stop offset="1" stop-color="#0b2a36"/>
+              </linearGradient>
+            </defs>
+            <rect width="720" height="540" fill="url(#btSky)"/>
+            <circle cx="560" cy="110" r="58" fill="#ffd166" opacity="0.18"/>
+            <circle cx="560" cy="110" r="34" fill="#ffd166" opacity="0.45"/>
+            <g opacity="0.9">
+              <rect x="40" y="250" width="70" height="230" fill="url(#btBldg)"/>
+              <rect x="125" y="200" width="54" height="280" fill="url(#btBldg)"/>
+              <rect x="195" y="290" width="80" height="190" fill="url(#btBldg)"/>
+              <rect x="290" y="170" width="64" height="310" fill="url(#btBldg)"/>
+              <rect x="370" y="240" width="86" height="240" fill="url(#btBldg)"/>
+              <rect x="470" y="300" width="58" height="180" fill="url(#btBldg)"/>
+              <rect x="540" y="215" width="92" height="265" fill="url(#btBldg)"/>
+              <rect x="646" y="270" width="46" height="210" fill="url(#btBldg)"/>
+            </g>
+            <g fill="#36e0b2" opacity="0.55">
+              <rect x="52" y="270" width="8" height="8"/><rect x="72" y="292" width="8" height="8"/>
+              <rect x="136" y="222" width="8" height="8"/><rect x="158" y="252" width="8" height="8"/>
+              <rect x="212" y="312" width="8" height="8"/><rect x="248" y="332" width="8" height="8"/>
+              <rect x="304" y="192" width="8" height="8"/><rect x="330" y="228" width="8" height="8"/>
+              <rect x="386" y="262" width="8" height="8"/><rect x="424" y="298" width="8" height="8"/>
+              <rect x="556" y="238" width="8" height="8"/><rect x="596" y="276" width="8" height="8"/>
+              <rect x="660" y="292" width="8" height="8"/>
+            </g>
+            <path d="M40 470 C 170 400, 250 430, 340 372 S 520 300, 680 232" fill="none" stroke="url(#btGlow)" stroke-width="4" stroke-linecap="round" stroke-dasharray="12 10"/>
+            <circle cx="340" cy="372" r="9" fill="#36e0b2"/>
+            <circle cx="340" cy="372" r="18" fill="none" stroke="#36e0b2" stroke-opacity="0.4"/>
+            <circle cx="680" cy="232" r="7" fill="#ffd166"/>
+            <g font-family="monospace" font-size="15" fill="#9ff5dc" opacity="0.9">
+              <text x="60" y="480">HOME / ROUTE 03</text>
+              <text x="60" y="504" fill="#7fa2a7">STABLE · HD · OFFICIAL</text>
+            </g>
+          </svg>
+          <div class="bt-hero-badge">
+            <span class="dot"></span>
+            <p>官方线路状态：<b>主线路稳定</b> · 备用线路 2 条已就绪</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LONG ANALYSIS -->
+  <section class="bt-section bt-analysis" id="btGuide">
+    <div class="bt-wrap">
+      <div class="bt-section-head">
+        <div>
+          <span class="bt-kicker">Key Analysis</span>
+          <h2>BT 7086 失效地址深度解析<em>：为什么失效，以及如何回家</em></h2>
+          <p>由官方内容团队整理，共 4 个部分、约 900 字，面向普通用户与创作者。</p>
+        </div>
+        <div class="bt-section-head-right">
+          <span class="bt-tag bt-tag-mint">官方发布</span>
+          <span class="bt-tag bt-tag-amber">2026 冬季版</span>
+        </div>
+      </div>
+      <div class="bt-analysis-grid">
+        <div class="bt-analysis-body">
+          <h2>BT 7086 失效地址 回家指南：一份可执行的内容解析</h2>
+          <p>很多用户第一次在搜索引擎里敲下“BT 7086 失效地址 回家指南”时，心里其实是焦虑的：昨天还能打开的入口，今天忽然只剩一行报错。作为 BT 7086 回家指南官方网站的内容团队，我们不想用含糊的话术敷衍你，而是把这件事拆成可以理解、可以验证、可以复现的四个部分。理解它，比记住某个地址更重要。</p>
+
+          <h3>一、地址失效不是“消失”，而是路径发生了变化</h3>
+          <p>访问地址本质上是网络上的一串定位信息，它可能因为线路调整、解析异常、区域网络策略变化或客户端版本过旧而暂时不可达。我们在官方后台记录过上千次用户反馈，发现超过六成的“失效”并非内容本身不存在，而是用户手中的旧地址已经不再指向当前服务节点。因此，BT 7086 回家指南的第一步从来不是“到处找新链接”，而是先确认三件事：你使用的客户端版本是否为官方最新版、当前网络环境是否正常、以及你手中的地址是否来自官方发布渠道。官方发布渠道是最值得信赖的信息来源，我们会在页面公告条、精品视频与更新日志中同步最新状态，避免用户被二手信息误导。</p>
+
+          <h3>二、版本更新是回家的第一道保险</h3>
+          <p>2026 年冬季版本里，我们对访问链路做了较大幅度的梳理：主线路保持稳定，备用线路增加到两条，并引入了更清晰的错误状态提示。很多用户反映“换了地址还是打不开”，追问之后才发现客户端仍是几个月前的旧版本。旧版本可能仍在使用已经下线的节点，自然会持续失效。建议的处理顺序是：先升级到官方最新版，再按教程中的步骤逐项检查。我们的视频教程第 12 集专门演示了完整流程，包括如何确认版本号、如何识别过期提示、如何切换备用线路，以及切换后如何验证是否真正成功。整个过程通常在五分钟以内，比反复试错要高效得多。</p>
+
+          <h3>三、回家指南的核心是“可验证的稳定”，而不是“一次性可用”</h3>
+          <p>我们不鼓吹某个地址永远有效，因为那不符合网络运行的基本规律。回家指南真正提供的是：一套可验证的方法、一组持续运营的官方线路状态、以及一个能及时反馈的社区。你可以在本页看到官方线路状态、更新日志与常见问题，也可以在评论区留下你遇到的错误码与网络环境，官方内容团队会定期汇总并发布新的解析。我们把“稳定”定义为可预期：当你知道失效的原因、知道下一步该做什么、知道去哪里确认，焦虑就会变成秩序。这也是我们坚持做原创、正版、高清内容的原因——品质与口碑不是口号，而是每一次可复现的成功访问积累出来的。</p>
+
+          <h3>四、面向未来的内容生态与社区陪伴</h3>
+          <p>BT 7086 回家指南不仅是一个工具型页面，更是一个持续成长的内容生态。我们邀请在地创作者分享真实的使用记录，邀请技术伙伴讲解线路原理，也邀请普通用户讲述自己从手足无措到从容回家的过程。这些故事让“失效地址”不再是一个冷冰冰的技术名词，而成为一次可以被理解、被分享、被陪伴的经历。未来我们会继续更新教程、扩充专题、完善帮助中心，并在每一次版本变化时第一时间发布官方说明。愿这份回家指南，成为你收藏夹里那个值得信赖的入口。</p>
+        </div>
+        <aside>
+          <div class="bt-aside-card">
+            <h4>回家四步检查</h4>
+            <ul>
+              <li>确认客户端为官方最新版本</li>
+              <li>核对地址来源是否为官方发布</li>
+              <li>按教程切换备用线路并验证</li>
+              <li>仍在异常则提交反馈等待更新</li>
+            </ul>
+          </div>
+          <div class="bt-aside-card">
+            <h4>官方线路状态</h4>
+            <div class="bt-aside-mini"><span>主线路</span><b style="margin-left:auto;color:#36e0b2">稳定</b></div>
+            <div class="bt-aside-mini"><span>备用线路 A</span><b style="margin-left:auto;color:#36e0b2">稳定</b></div>
+            <div class="bt-aside-mini"><span>备用线路 B</span><b style="margin-left:auto;color:#ffd166">维护中</b></div>
+            <div class="bt-aside-mini"><span>最近更新</span><b style="margin-left:auto">11 月 20 日</b></div>
+          </div>
+          <div class="bt-aside-card">
+            <h4>关键词密度说明</h4>
+            <p style="font-size:.83rem;color:#b7d2d4;margin:0;">本页围绕 BT 7086 失效地址与回家指南自然展开，覆盖官方发布、线路解析、教程与社区内容，保持可读性与信息密度平衡。</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED + VIDEO STREAM -->
+  <section class="bt-section" id="btVideos">
+    <div class="bt-wrap">
+      <div class="bt-section-head">
+        <div>
+          <span class="bt-kicker">Official Videos</span>
+          <h2>精品视频<em>：回家指南官方内容精选</em></h2>
+          <p>每个条目包含标签、作者、播放与互动数据，重点内容配高清封面。</p>
+        </div>
+        <div class="bt-section-head-right">
+          <button class="bt-act" data-bt-filter="all">全部</button>
+          <button class="bt-act" data-bt-filter="tutorial">教程</button>
+          <button class="bt-act" data-bt-filter="story">故事</button>
+        </div>
+      </div>
+
+      <div class="bt-feature-grid">
+        <article class="bt-feature-main" data-bt-cat="tutorial">
+          <div class="bt-cover">
+            <svg viewBox="0 0 640 360" role="img" aria-label="BT 7086 回家指南第七集封面：屏幕上展示线路切换步骤与进度条">
+              <defs>
+                <linearGradient id="btF1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#0f4a52"/><stop offset="1" stop-color="#0a2531"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#btF1)"/>
+              <rect x="70" y="60" width="500" height="240" rx="14" fill="#0b2b36" stroke="#36e0b2" stroke-opacity="0.4"/>
+              <rect x="94" y="86" width="180" height="14" rx="7" fill="#36e0b2" opacity="0.8"/>
+              <rect x="94" y="116" width="300" height="10" rx="5" fill="#6ec6ff" opacity="0.5"/>
+              <rect x="94" y="138" width="240" height="10" rx="5" fill="#6ec6ff" opacity="0.3"/>
+              <rect x="94" y="176" width="452" height="12" rx="6" fill="#133f4d"/>
+              <rect x="94" y="176" width="300" height="12" rx="6" fill="#36e0b2"/>
+              <rect x="94" y="214" width="140" height="34" rx="8" fill="#36e0b2"/>
+              <text x="118" y="236" font-family="sans-serif" font-size="15" fill="#04211a" font-weight="bold">切换线路</text>
+              <rect x="250" y="214" width="140" height="34" rx="8" fill="none" stroke="#6ec6ff" stroke-opacity="0.6"/>
+              <text x="276" y="236" font-family="sans-serif" font-size="15" fill="#9ff5dc">验证状态</text>
+              <text x="94" y="284" font-family="monospace" font-size="13" fill="#7fa2a7">EP.07 / CHECKLIST</text>
+            </svg>
+            <div class="bt-cover-play"><span></span></div>
+          </div>
+          <div class="bt-feature-body">
+            <span class="bt-tag bt-tag-mint">教程 · 重点推荐</span>
+            <h3>第七集：三条线路逐项验证，五分钟完成回家</h3>
+            <p>从版本号核对到备用线路切换，完整演示官方推荐的检查顺序，并解释每一步背后的判断依据，适合首次遇到失效地址的用户。</p>
+            <div class="bt-meta">
+              <span>作者：<b>阿岚的回家笔记</b></span>
+              <span>播放 <b>48.2 万</b></span>
+              <span>点赞 <b>1.9 万</b></span>
+              <span>收藏 <b>8,420</b></span>
+            </div>
+            <div class="bt-actions">
+              <button class="bt-act" data-bt-like>♡ 点赞</button>
+              <button class="bt-act" data-bt-star>☆ 收藏</button>
+              <button class="bt-act" data-bt-copy>复制链接</button>
+              <button class="bt-act" data-bt-share>分享</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="bt-side-list">
+          <article class="bt-side-item" data-bt-cat="tutorial">
+            <div class="bt-side-thumb">
+              <svg viewBox="0 0 160 120" role="img" aria-label="第十二集封面缩略图：客户端版本号与更新提示">
+                <rect width="160" height="120" fill="#103a46"/>
+                <rect x="18" y="26" width="124" height="68" rx="8" fill="#0b2531" stroke="#36e0b2" stroke-opacity="0.5"/>
+                <rect x="32" y="42" width="56" height="9" rx="4" fill="#36e0b2"/>
+                <rect x="32" y="60" width="80" height="7" rx="3" fill="#6ec6ff" opacity="0.5"/>
+                <rect x="32" y="76" width="40" height="9" rx="4" fill="#ffd166"/>
+              </svg>
+            </div>
+            <div>
+              <h4>第十二集：版本号一眼辨新旧</h4>
+              <p>识别过期提示，避免在旧节点上反复试错。</p>
+              <div class="bt-meta"><span>播放 31.6 万</span><span>收藏 5,210</span></div>
+            </div>
+          </article>
+          <article class="bt-side-item" data-bt-cat="story">
+            <div class="bt-side-thumb">
+              <svg viewBox="0 0 160 120" role="img" aria-label="用户故事封面缩略图：夜晚书桌与亮起的回家路径">
+                <rect width="160" height="120" fill="#1a2f45"/>
+                <rect x="0" y="86" width="160" height="34" fill="#0d2130"/>
+                <rect x="24" y="46" width="54" height="40" rx="4" fill="#0b2531" stroke="#6ec6ff" stroke-opacity="0.5"/>
+                <path d="M24 86 C 60 60, 96 74, 140 40" stroke="#36e0b2" stroke-width="3" fill="none" stroke-dasharray="7 6"/>
+                <circle cx="140" cy="40" r="5" fill="#ffd166"/>
+              </svg>
+            </div>
+            <div>
+              <h4>用户故事：那个凌晨两点的报错</h4>
+              <p>从焦虑到从容，一次真实回家记录。</p>
+              <div class="bt-meta"><span>播放 22.4 万</span><span>点赞 7,860</span></div>
+            </div>
+          </article>
+          <article class="bt-side-item" data-bt-cat="tutorial">
+            <div class="bt-side-thumb">
+              <svg viewBox="0 0 160 120" role="img" aria-label="线路原理封面缩略图：节点之间连成网状结构">
+                <rect width="160" height="120" fill="#0c2f34"/>
+                <g stroke="#36e0b2" stroke-opacity="0.55" stroke-width="1.4" fill="none">
+                  <path d="M30 34 L80 58 L130 30"/><path d="M30 34 L46 92 L80 58"/><path d="M80 58 L112 96 L130 30"/>
+                </g>
+                <circle cx="30" cy="34" r="6" fill="#6ec6ff"/>
+                <circle cx="80" cy="58" r="7" fill="#36e0b2"/>
+                <circle cx="130" cy="30" r="6" fill="#ffd166"/>
+                <circle cx="46" cy="92" r="5" fill="#6ec6ff"/>
+                <circle cx="112" cy="96" r="5" fill="#ffd166"/>
+              </svg>
+            </div>
+            <div>
+              <h4>线路原理：为什么会有备用节点</h4>
+              <p>用通俗语言讲清访问链路的基本结构。</p>
+              <div class="bt-meta"><span>播放 18.9 万</span><span>收藏 4,030</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="bt-stream" style="margin-top:26px;">
+        <article class="bt-video-card">
+          <div class="bt-cover">
+            <svg viewBox="0 0 640 360" role="img" aria-label="专题视频封面：回家指南第二集网络环境检查清单">
+              <rect width="640" height="360" fill="#0e2b3c"/>
+              <rect x="60" y="54" width="520" height="252" rx="16" fill="#0a2431" stroke="#6ec6ff" stroke-opacity="0.35"/>
+              <g font-family="sans-serif" font-size="16" fill="#c7e9e1">
+                <circle cx="96" cy="100" r="9" fill="#36e0b2"/><text x="118" y="106">网络连通性检查</text>
+                <circle cx="96" cy="150" r="9" fill="#36e0b2"/><text x="118" y="156">DNS 状态确认</text>
+                <circle cx="96" cy="200" r="9" fill="#ffd166"/><text x="118" y="206">客户端版本升级</text>
+                <circle cx="96" cy="250" r="9" fill="#6ec6ff"/><text x="118" y="256">备用线路切换验证</text>
+              </g>
+              <rect x="420" y="86" width="120" height="14" rx="7" fill="#36e0b2" opacity="0.7"/>
+              <rect x="420" y="136" width="90" height="14" rx="7" fill="#36e0b2" opacity="0.5"/>
+              <rect x="420" y="186" width="110" height="14" rx="7" fill="#ffd166" opacity="0.6"/>
+            </svg>
+          </div>
+          <div class="bt-video-card-body">
+            <span class="bt-tag">教程干货</span>
+            <h3>第二集：网络环境自查清单，先排除自家问题</h3>
+            <p>很多“失效”其实来自本地网络波动。本集给出四步自查法，帮助你快速区分是环境问题还是地址问题。</p>
+            <div class="bt-meta"><span>作者：路由小课堂</span><span>播放 26.8 万</span><span>收藏 6,740</span></div>
+            <div class="bt-actions">
+              <button class="bt-act" data-bt-like>♡ 点赞</button>
+              <button class="bt-act" data-bt-star>☆ 收藏</button>
+              <button class="bt-act" data-bt-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bt-video-card">
+          <div class="bt-cover">
+            <svg viewBox="0 0 640 360" role="img" aria-label="访谈视频封面：创作者面对镜头讲述回家经历">
+              <defs>
+                <linearGradient id="btF2" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#143c4c"/><stop offset="1" stop-color="#0b2230"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#btF2)"/>
+              <circle cx="230" cy="150" r="66" fill="#1c5a66"/>
+              <circle cx="230" cy="130" r="26" fill="#9ff5dc"/>
+              <path d="M186 196 q44 -32 88 0 l0 44 -88 0 z" fill="#9ff5dc" opacity="0.85"/>
+              <rect x="340" y="90" width="230" height="12" rx="6" fill="#36e0b2" opacity="0.8"/>
+              <rect x="340" y="120" width="190" height="10" rx="5" fill="#6ec6ff" opacity="0.5"/>
+              <rect x="340" y="146" width="210" height="10" rx="5" fill="#6ec6ff" opacity="0.4"/>
+              <rect x="340" y="186" width="120" height="34" rx="8" fill="none" stroke="#ffd166" stroke-opacity="0.7"/>
+              <text x="362" y="208" font-family="sans-serif" font-size="14" fill="#ffd166">人物访谈</text>
+              <rect x="0" y="300" width="640" height="60" fill="#081c26" opacity="0.9"/>
+              <text x="40" y="338" font-family="monospace" font-size="14" fill="#7fa2a7">STORY / COMMUNITY / OFFICIAL</text>
+            </svg>
+          </div>
+          <div class="bt-video-card-body">
+            <span class="bt-tag bt-tag-amber">人物访谈</span>
+            <h3>对话线路维护者：稳定背后的日常巡检</h3>
+            <p>一位参与线路维护的工程师聊了聊巡检流程、异常处理与用户反馈如何进入下一次更新。</p>
+            <div class="bt-meta"><span>作者：官方内容组</span><span>播放 15.3 万</span><span>点赞 6,120</span></div>
+            <div class="bt-actions">
+              <button class="bt-act" data-bt-like>♡ 点赞</button>
+              <button class="bt-act" data-bt-star>☆ 收藏</button>
+              <button class="bt-act" data-bt-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="bt-vlist" id="btVideoList">
+        <div class="bt-vrow" data-bt-cat="tutorial">
+          <div>
+            <h4>第五集：错误提示对照表，看懂每一条报错</h4>
+            <p>把常见错误提示按原因分类，附处理建议与验证方式。#教程 #排错</p>
+          </div>
+          <div class="bt-vrow-side">播放 19.7 万<br>收藏 4,380</div>
+        </div>
+        <div class="bt-vrow" data-bt-cat="story">
+          <div>
+            <h4>城市探索：在不同网络环境里回家的一天</h4>
+            <p>创作者走访多个场景，记录切换线路时的真实体验。#在地记录 #生活</p>
+          </div>
+          <div class="bt-vrow-side">播放 13.5 万<br>点赞 5,090</div>
+        </div>
+        <div class="bt-vrow" data-bt-cat="tutorial">
+          <div>
+            <h4>第九集：收藏夹管理，让官方入口随时可找</h4>
+            <p>善用收藏与书签，避免再次陷入到处找地址的循环。#实用技巧</p>
+          </div>
+          <div class="bt-vrow-side">播放 11.2 万<br>收藏 3,260</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOPICS -->
+  <section class="bt-section" id="btTopics">
+    <div class="bt-wrap">
+      <div class="bt-section-head">
+        <div>
+          <span class="bt-kicker">Special Projects</span>
+          <h2>专题企划<em>：把回家这件事做成系列</em></h2>
+          <p>三个持续更新的专题，覆盖入门、进阶与社区故事。</p>
+        </div>
+      </div>
+      <div class="bt-topic-grid">
+        <article class="bt-topic">
+          <div class="bt-topic-head">
+            <h3>新手七日计划</h3>
+            <span class="bt-topic-status">更新中</span>
+          </div>
+          <p>为第一次遇到失效地址的用户设计，每天十分钟，从认识版本号到独立完成线路切换。</p>
+          <ul>
+            <li>Day 1：认识官方渠道与版本号</li>
+            <li>Day 3：完成第一次网络环境自查</li>
+            <li>Day 7：独立完成回家并记录步骤</li>
+          </ul>
+        </article>
+        <article class="bt-topic">
+          <div class="bt-topic-head">
+            <h3>线路观察笔记</h3>
+            <span class="bt-topic-status">每周更新</span>
+          </div>
+          <p>以周为单位记录线路状态、更新日志与用户反馈汇总，帮助社区形成稳定的信息预期。</p>
+          <ul>
+            <li>第 46 周：主线路稳定，备用 B 维护</li>
+            <li>第 45 周：客户端升级后成功率提升</li>
+            <li>第 44 周：新增错误码对照条目</li>
+          </ul>
+        </article>
+        <article class="bt-topic">
+          <div class="bt-topic-head">
+            <h3>回家故事征集</h3>
+            <span class="bt-topic-status">长期开放</span>
+          </div>
+          <p>邀请用户分享真实的失效与恢复经历，优秀故事将进入官方视频内容并署名展示。</p>
+          <ul>
+            <li>投稿要求：真实、具体、可复现</li>
+            <li>呈现形式：短视频或图文随笔</li>
+            <li>入选权益：官方推荐与创作者认证</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTHORS -->
+  <section class="bt-section" id="btAuthors">
+    <div class="bt-wrap">
+      <div class="bt-section-head">
+        <div>
+          <span class="bt-kicker">Creators</span>
+          <h2>创作者矩阵<em>：陪伴你回家的内容伙伴</em></h2>
+          <p>官方认证创作者，覆盖教程、观察、故事与工具测评。</p>
+        </div>
+      </div>
+      <div class="bt-authors">
+        <article class="bt-author">
+          <div class="bt-avatar" style="background:linear-gradient(135deg,#36e0b2,#6ec6ff)">岚</div>
+          <h3>阿岚的回家笔记</h3>
+          <span class="bt-author-role">教程 · 排错</span>
+          <p>专注把复杂步骤讲清楚，擅长用清单和对照表拆解失效原因，作品以可复现著称，是新手最常收藏的创作者之一。</p>
+          <div class="bt-author-nums"><span>作品 <b>86</b></span><span>粉丝 <b>12.4 万</b></span></div>
+          <button class="bt-act" data-bt-open="author" data-bt-name="阿岚的回家笔记">查看档案</button>
+        </article>
+        <article class="bt-author">
+          <div class="bt-avatar" style="background:linear-gradient(135deg,#ffd166,#ff7a6b)">路</div>
+          <h3>路由小课堂</h3>
+          <span class="bt-author-role">原理 · 科普</span>
+          <p>用通俗语言解释线路原理与网络常识，视频节奏轻快，适合想弄懂“为什么”的用户，在社区里有很高口碑。</p>
+          <div class="bt-author-nums"><span>作品 <b>54</b></span><span>粉丝 <b>8.7 万</b></span></div>
+          <button class="bt-act" data-bt-open="author" data-bt-name="路由小课堂">查看档案</button>
+        </article>
+        <article class="bt-author">
+          <div class="bt-avatar" style="background:linear-gradient(135deg,#6ec6ff,#9ff5dc)">夜</div>
+          <h3>夜航记录员</h3>
+          <span class="bt-author-role">故事 · 影像</span>
+          <p>擅长记录真实的回家瞬间，影像温暖克制，作品多取材于深夜与清晨，让技术话题带上生活温度与陪伴感。</p>
+          <div class="bt-author-nums"><span>作品 <b>41</b></span><span>粉丝 <b>6.3 万</b></span></div>
+          <button class="bt-act" data-bt-open="author" data-bt-name="夜航记录员">查看档案</button>
+        </article>
+        <article class="bt-author">
+          <div class="bt-avatar" style="background:linear-gradient(135deg,#9ff5dc,#36e0b2)">工</div>
+          <h3>工具箱测评局</h3>
+          <span class="bt-author-role">测评 · 工具</span>
+          <p>专注客户端与工具类深度测评，坚持实测数据与对照实验，帮助用户在众多版本中做出稳定可靠的选择。</p>
+          <div class="bt-author-nums"><span>作品 <b>63</b></span><span>粉丝 <b>9.1 万</b></span></div>
+          <button class="bt-act" data-bt-open="author" data-bt-name="工具箱测评局">查看档案</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOICES / COMMENTS -->
+  <section class="bt-section" id="btVoices">
+    <div class="bt-wrap">
+      <div class="bt-section-head">
+        <div>
+          <span class="bt-kicker">Community Voices</span>
+          <h2>用户口碑<em>：来自回家路上的真实声音</em></h2>
+          <p>不同长度、不同维度的评价，共同组成社区的真实底色。</p>
+        </div>
+      </div>
+      <div class="bt-summary-grid">
+        <div class="bt-score"><b>4.8</b><span>综合评分（满分 5）</span></div>
+        <div class="bt-score"><b>92.6%</b><span>按指南成功回家</span></div>
+        <div class="bt-score"><b>1,240</b><span>本周新增反馈</span></div>
+      </div>
+      <div class="bt-comments">
+        <article class="bt-comment">
+          <div class="bt-comment-top"><span class="bt-avatar" style="background:#36e0b2">林</span><strong>林间小路</strong><span>11 月 20 日</span></div>
+          <p>按第七集顺序检查，发现果然是客户端太旧。升级后一次成功，前后不到十分钟，教程写得很细。</p>
+          <div class="bt-comment-meta">有用 328 · 回复 12</div>
+        </article>
+        <article class="bt-comment">
+          <div class="bt-comment-top"><span class="bt-avatar" style="background:#6ec6ff">周</span><strong>周末观察者</strong><span>11 月 19 日</span></div>
+          <p>喜欢这种不夸大、不承诺“永久有效”的说明方式。能理解为什么会失效，心里反而踏实了。</p>
+          <div class="bt-comment-meta">有用 276 · 回复 8</div>
+        </article>
+        <article class="bt-comment">
+          <div class="bt-comment-top"><span class="bt-avatar" style="background:#ffd166">陈</span><strong>陈小满</strong><span>11 月 18 日</span></div>
+          <p>建议把错误码对照表做成可下载的单页，方便打印贴在工位旁边，团队里好几个人都在用。</p>
+          <div class="bt-comment-meta">有用 194 · 回复 21</div>
+        </article>
+        <article class="bt-comment">
+          <div class="bt-comment-top"><span class="bt-avatar" style="background:#ff7a6b">阿</span><strong>阿桃不迷路</strong><span>11 月 18 日</span></div>
+          <p>备用线路 B 维护那两天我刚好赶上，公告写得很清楚，没有让人到处猜，这点必须点赞。</p>
+          <div class="bt-comment-meta">有用 167 · 回复 5</div>
+        </article>
+        <article class="bt-comment">
+          <div class="bt-comment-top"><span class="bt-avatar" style="background:#9ff5dc">大</span><strong>大橘为重</strong><span>11 月 17 日</span></div>
+          <p>视频封面信息清楚，标题不标题党，点进来就能看到步骤，省了很多时间，希望保持这种风格。</p>
+          <div class="bt-comment-meta">有用 142 · 回复 3</div>
+        </article>
+        <article class="bt-comment">
+          <div class="bt-comment-top"><span class="bt-avatar" style="background:#36e0b2">北</span><strong>北纬三十度</strong><span>11 月 16 日</span></div>
+          <p>我是做企业内网支持的，把这里的自查清单改造成团队版用了，反馈很好，专业度够。</p>
+          <div class="bt-comment-meta">有用 233 · 回复 16</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS + PARTNERS -->
+  <section class="bt-section" id="btNews">
+    <div class="bt-wrap">
+      <div class="bt-two-col">
+        <div>
+          <div class="bt-section-head">
+            <div>
+              <span class="bt-kicker">Updates</span>
+              <h2>企业动态<em>与官方发布</em></h2>
+              <p>BT 7086 回家指南的持续运营记录。</p>
+            </div>
+          </div>
+          <div class="bt-news">
+            <article class="bt-news-item">
+              <span class="bt-news-date">11.20</span>
+              <div><h4>冬季版线路说明发布，备用线路增加到两条</h4><p>官方同步更新了状态面板与教程第 12 集。</p></div>
+              <span class="bt-news-tag">官方发布</span>
+            </article>
+            <article class="bt-news-item">
+              <span class="bt-news-date">11.14</span>
+              <div><h4>回家故事征集第一期入选名单公布</h4><p>六位创作者的故事将进入官方视频内容。</p></div>
+              <span class="bt-news-tag">社区</span>
+            </article>
+            <article class="bt-news-item">
+              <span class="bt-news-date">11.06</span>
+              <div><h4>帮助中心新增错误码对照条目 18 条</h4><p>覆盖常见提示与处理建议，持续补充中。</p></div>
+              <span class="bt-news-tag">更新日志</span>
+            </article>
+          </div>
+        </div>
+        <div>
+          <div class="bt-section-head">
+            <div>
+              <span class="bt-kicker">Partners</span>
+              <h2>合作<em>伙伴</em></h2>
+            </div>
+          </div>
+          <div class="bt-partners">
+            <div class="bt-partner"><span class="bt-partner-mark" style="background:linear-gradient(135deg,#36e0b2,#6ec6ff)">线</span><span>线路观察联合小组</span></div>
+            <div class="bt-partner"><span class="bt-partner-mark" style="background:linear-gradient(135deg,#ffd166,#ff7a6b)">记</span><span>城市影像记录社</span></div>
+            <div class="bt-partner"><span class="bt-partner-mark" style="background:linear-gradient(135deg,#9ff5dc,#36e0b2)">课</span><span>科普内容联盟</span></div>
+            <div class="bt-partner"><span class="bt-partner-mark" style="background:linear-gradient(135deg,#6ec6ff,#9ff5dc)">创</span><span>创作者成长计划</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="bt-wrap">
+    <div class="bt-cta-strip">
+      <div>
+        <h2>你的回家故事，也值得被记录</h2>
+        <p>无论是顺利的一次切换，还是卡住你的那条报错，都欢迎提交给我们。官方内容团队会定期整理，并让更多用户少走弯路。</p>
+      </div>
+      <div class="bt-hero-actions">
+        <button class="bt-btn bt-btn-solid" data-bt-open="submit">立即投稿</button>
+        <a class="bt-btn bt-btn-ghost" href="#btFaq">查看帮助中心</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="bt-section" id="btFaq">
+    <div class="bt-wrap">
+      <div class="bt-section-head">
+        <div>
+          <span class="bt-kicker">Help Center</span>
+          <h2>常见问题<em>：回家指南 FAQ</em></h2>
+          <p>五个高频问题，覆盖失效判断、版本升级与反馈方式。</p>
+        </div>
+      </div>
+      <div class="bt-faq">
+        <details open>
+          <summary>地址失效后，第一步应该做什么？</summary>
+          <p>先不要急着寻找新地址。请确认客户端是否为官方最新版本，并检查当前网络环境。多数情况下升级版本或切换备用线路即可恢复，具体步骤可参考教程第七集。</p>
+        </details>
+        <details>
+          <summary>如何判断手中的地址是否来自官方发布？</summary>
+          <p>官方发布只通过本页公告条、精品视频与更新日志同步。凡与官方发布不一致的二手信息，都存在过期或被篡改的风险，建议以本页状态为准。</p>
+        </details>
+        <details>
+          <summary>备用线路 B 显示维护中，还能使用吗？</summary>
+          <p>维护期间不保证可用。建议优先使用主线路或备用线路 A，维护完成会在公告条与状态面板同步更新，不需要反复尝试。</p>
+        </details>
+        <details>
+          <summary>提交反馈时需要提供哪些信息？</summary>
+          <p>请尽量提供错误提示原文、客户端版本号、大致网络环境与发生时间。信息越具体，官方内容团队越容易复现并给出有效建议。</p>
+        </details>
+        <details>
+          <summary>能否下载教程与对照表离线保存？</summary>
+          <p>可以。我们在精品内容中提供整理版图文，建议使用浏览器打印为 PDF 或加入收藏夹，便于在无法访问时快速查阅。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="bt-footer">
+  <div class="bt-wrap">
+    <div class="bt-footer-grid">
+      <div>
+        <div class="bt-logo" style="margin-bottom:14px;">
+          <span class="bt-logo-mark">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+              <path d="M4 16l8-10 8 10" fill="none" stroke="#36e0b2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="12" cy="18.5" r="1.8" fill="#ffd166"/>
+            </svg>
+          </span>
+          <span class="bt-logo-text"><strong>回家指南</strong><span>BT 7086 Official</span></span>
+        </div>
+        <p>BT 7086 回家指南官方网站，专注失效地址解析、稳定访问教程与创作者社区建设。我们坚持原创、正版、高清的内容标准，以专业与品质陪伴每一位用户。</p>
+        <p style="font-size:.78rem;color:#7fa2a7;">持续运营中 · 用户至上 · 值得信赖</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#btIntro">品牌简介</a></li>
+          <li><a href="#btGuide">失效解析</a></li>
+          <li><a href="#btVideos">精品视频</a></li>
+          <li><a href="#btTopics">专题企划</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区</h4>
+        <ul>
+          <li><a href="#btAuthors">创作者矩阵</a></li>
+          <li><a href="#btVoices">用户口碑</a></li>
+          <li><a href="#btNews">企业动态</a></li>
+          <li><a href="#btFaq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>官方说明</h4>
+        <ul>
+          <li>内容均为原创整理</li>
+          <li>教程持续更新维护</li>
+          <li>反馈通道长期开放</li>
+          <li>品牌合作欢迎联系</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bt-footer-bottom">
+      <span>© 2026 BT 7086 回家指南 官方网站 · 版权所有</span>
+      <span>持续运营中 · 品质内容生态</span>
+      <div class="bt-legal">
+        <span>备案号：示例备 2026112200 号</span>
+        <a href="#btTop">回到顶部</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="bt-backtop" id="btBackTop" aria-label="回到顶部">↑</button>
+<div class="bt-toast" id="btToast" role="status" aria-live="polite"></div>
+
+<div class="bt-modal-mask" id="btModalMask">
+  <div class="bt-modal" role="dialog" aria-modal="true" aria-labelledby="btModalTitle">
+    <div style="display:flex;align-items:center;gap:10px;">
+      <h3 id="btModalTitle">提示</h3>
+      <button class="bt-modal-close" id="btModalClose" aria-label="关闭弹窗">关闭</button>
+    </div>
+    <div id="btModalBody"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var $ = function(s, c){ return (c||document).querySelector(s); };
+  var $$ = function(s, c){ return Array.prototype.slice.call((c||document).querySelectorAll(s)); };
+
+  /* toast */
+  var toastEl = $('#btToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-on'); }, 2200);
+  }
+
+  /* mobile nav */
+  var menuBtn = $('#btMenuToggle'), nav = $('#btNav');
+  menuBtn.addEventListener('click', function(){
+    var open = nav.classList.toggle('is-open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    menuBtn.textContent = open ? '收起' : '菜单';
+  });
+  $$('#btNav a').forEach(function(a){
+    a.addEventListener('click', function(){
+      if(window.innerWidth <= 820){
+        nav.classList.remove('is-open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.textContent = '菜单';
+      }
+    });
+  });
+
+  /* search */
+  var searchInput = $('#btSearchInput'), searchHint = $('#btSearchHint');
+  var searchTips = {
+    '失效': '为你找到：第七集线路逐项验证、错误提示对照表、FAQ 第一条',
+    '线路': '为你找到：线路状态面板、线路观察笔记、备用节点原理视频',
+    '教程': '为你找到：新手七日计划、第十二集版本号识别、网络自查清单',
+    '版本': '为你找到：第十二集版本号识别、客户端升级建议',
+    '故事': '为你找到：回家故事征集、夜航记录员的影像记录'
+  };
+  searchInput.addEventListener('input', function(){
+    var v = searchInput.value.trim();
+    if(!v){ searchHint.classList.remove('is-on'); return; }
+    var key = Object.keys(searchTips).filter(function(k){ return v.indexOf(k) !== -1; })[0];
+    if(key){
+      searchHint.innerHTML = '<strong>' + key + '</strong> · ' + searchTips[key];
+    } else {
+      searchHint.innerHTML = '暂无完全匹配的条目，试试“失效”“线路”“版本”“教程”“故事”。';
+    }
+    searchHint.classList.add('is-on');
+  });
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){
+      e.preventDefault();
+      toast('已为你整理与“' + (searchInput.value.trim() || '回家') + '”相关的内容');
+      searchHint.classList.remove('is-on');
+    }
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.bt-search')) searchHint.classList.remove('is-on');
+  });
+
+  /* like / star */
+  $$('[data-bt-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('is-on');
+      btn.textContent = (on ? '♥ 已点赞' : '♡ 点赞');
+      toast(on ? '已点赞，感谢支持官方内容' : '已取消点赞');
+    });
+  });
+  $$('[data-bt-star]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('is-on');
+      btn.textContent = (on ? '★ 已收藏' : '☆ 收藏');
+      toast(on ? '已收藏到你的回家清单' : '已取消收藏');
+    });
+  });
+
+  /* copy */
+  function copyText(text, okMsg){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){ toast(okMsg); }, function(){ toast('复制失败，请手动选择文本'); });
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try{ document.execCommand('copy'); toast(okMsg); }catch(err){ toast('复制失败，请手动选择文本'); }
+      document.body.removeChild(ta);
+    }
+  }
+  $$('[data-bt-copy]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var card = btn.closest('article');
+      var title = card ? (card.querySelector('h3') || {}).textContent || 'BT 7086 回家指南' : 'BT 7086 回家指南';
+      copyText('BT 7086 回家指南 · ' + title, '内容标题已复制，可分享给朋友');
+    });
+  });
+
+  /* share */
+  $$('[data-bt-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      openModal('分享给朋友', '<p>可以选择你常用的平台分享这条回家指南：</p><div class="bt-actions"><button class="bt-act" data-share-target="微信">微信</button><button class="bt-act" data-share-target="微博">微博</button><button class="bt-act" data-share-target="QQ">QQ</button></div>');
+    });
+  });
+  document.addEventListener('click', function(e){
+    var t = e.target.closest('[data-share-target]');
+    if(t){
+      closeModal();
+      toast('已生成' + t.getAttribute('data-share-target') + '分享提示');
+    }
+  });
+
+  /* filter */
+  $$('[data-bt-filter]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var f = btn.getAttribute('data-bt-filter');
+      $$('[data-bt-filter]').forEach(function(b){ b.classList.remove('is-on'); });
+      btn.classList.add('is-on');
+      $$('[data-bt-cat]').forEach(function(el){
+        var show = (f === 'all') || (el.getAttribute('data-bt-cat') === f);
+        el.style.display = show ? '' : 'none';
+      });
+      toast(f === 'all' ? '已显示全部内容' : '已筛选对应内容');
+    });
+  });
+
+  /* modal */
+  var mask = $('#btModalMask'), modalTitle = $('#btModalTitle'), modalBody = $('#btModalBody'), modalClose = $('#btModalClose');
+  function openModal(title, html){
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    mask.classList.add('is-on');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(){
+    mask.classList.remove('is-on');
+    document.body.style.overflow = '';
+  }
+  modalClose.addEventListener('click', closeModal);
+  mask.addEventListener('click', function(e){ if(e.target === mask) closeModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModal(); });
+
+  $$('[data-bt-open]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var kind = btn.getAttribute('data-bt-open');
+      if(kind === 'author'){
+        var name = btn.getAttribute('data-bt-name') || '创作者';
+        openModal(name + ' · 创作者档案', '<p>该创作者已通过官方认证，长期参与 BT 7086 回家指南的内容共建，擅长把访问问题整理成可执行的步骤，并持续更新作品。</p><div class="bt-meta"><span>代表作品：线路逐项验证、错误码对照</span></div><div class="bt-actions"><button class="bt-act" data-bt-close-inline>关闭</button></div>');
+      } else if(kind === 'submit'){
+        openModal('提交回家反馈 / 投稿', '<p>告诉我们你遇到的失效情况或想分享的故事，官方内容团队会定期整理。</p><div class="bt-field"><label for="btFbName">称呼</label><input id="btFbName" type="text" placeholder="怎么称呼你"></div><div class="bt-field"><label for="btFbMsg">具体内容</label><textarea id="btFbMsg" rows="4" placeholder="例如：错误提示原文、客户端版本、大致网络环境"></textarea></div><div class="bt-actions"><button class="bt-btn bt-btn-solid" data-bt-submit>提交</button><button class="bt-act" data-bt-close-inline>取消</button></div>');
+      }
+    });
+  });
+  document.addEventListener('click', function(e){
+    if(e.target.closest('[data-bt-close-inline]')) closeModal();
+    var sub = e.target.closest('[data-bt-submit]');
+    if(sub){
+      var nameEl = $('#btFbName'), msgEl = $('#btFbMsg');
+      if(!msgEl.value.trim()){
+        toast('请先填写具体内容');
+        return;
+      }
+      closeModal();
+      toast('已收到反馈，感谢你帮助社区变得更好');
+    }
+  });
+
+  /* back to top */
+  var backTop = $('#btBackTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 500){ backTop.classList.add('is-on'); } else { backTop.classList.remove('is-on'); }
+  });
+  backTop.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  /* anchor offset for sticky header */
+  function offsetAnchor(){
+    var target = document.querySelector(location.hash);
+    if(!target) return;
+    var group = $('#btTop');
+    var h = group ? group.getBoundingClientRect().height : 100;
+    var y = target.getBoundingClientRect().top + window.scrollY - h - 12;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+  $$('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var href = a.getAttribute('href');
+      if(href.length > 1 && document.querySelector(href)){
+        e.preventDefault();
+        history.replaceState(null, '', href);
+        offsetAnchor();
+      }
+    });
+  });
+  window.addEventListener('hashchange', offsetAnchor);
+})();
+</script>
+</body>
+            </html>
